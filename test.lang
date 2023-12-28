@@ -1,0 +1,8 @@
+function add(a, b) { a + b };
+let a = 1;
+let c = 3;
+let b = add(a, c);
+print(b);
+function sub(a, b) { a - b };
+let d = sub(c, a);
+print(d);
