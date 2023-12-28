@@ -3,6 +3,7 @@
 A simple language to learn compiler frontends/interpreters at [37C3](https://events.ccc.de/congress/2023/hub/en/event/building-tiny-programming-languages-mohit-karekar/).
 
 Refer the related blogpost here: https://mohitkarekar.com/posts/2023/compiler-frontend/
+A simpler version to get started (contains only addition expressions): https://github.com/mohitk05/ccc-lang/tree/simple
 
 Following are some example programs in `ccc-lang`:
 
