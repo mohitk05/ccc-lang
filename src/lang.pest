@@ -1,12 +1,4 @@
-program = { statement+ }
-statement = { function_decl | expression }
-function_decl = { "function " ~ identifier ~ "(" ~ params ~ ")" ~ "{" ~ (equation | call | term) ~ "}" ~ ";" }
-expression = { ("let"? ~ identifier ~ "=")? ~ (equation | call | term) ~ ";" }
-equation = { term ~ op ~ term }
+expression = { term ~ op ~ term }
+term = { ASCII_DIGIT+ }
 op = { "+" | "-" }
-call = { identifier ~ "(" ~ args ~ ")" }
-params = { identifier? ~ ("," ~ identifier)* }
-term = { identifier | ASCII_DIGIT+ }
-identifier = { ASCII_ALPHA+ }
-args = { term ~ ("," ~ term)* }
 WHITESPACE = _{ (" "|NEWLINE) }
